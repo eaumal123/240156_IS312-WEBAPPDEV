@@ -1,0 +1,75 @@
+/* Author: Eau Mallen
+   Creation date: 03/02/26 */
+
+
+/* Header style */
+header {
+    background: #f39a05;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #000907;
+    padding: 10px 20px;
+   
+}
+
+/* Navigation style */
+nav {
+    background-color: black;
+
+}
+
+/* Styling navigation and head spacing */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Styling navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Styling the hover movement above the navigation links */
+nav ul li a:hover {
+    background-color: red;
+
+}
+
+/* Main content alignment */
+main {
+    text-align: left;
+}
+
+/* Overall footer content styling */ 
+footer {
+    background-color: #880808;
+    color: white;
+}
+
+/* Styling the heading for the footer */ 
+footer div h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    display: block;
+
+}
+
+/* Styling the position of the contact informations */
+footer div br {
+    text-align: center;
+    display: block;
+    margin-left: 0;
+}
+
+/* Aligning the copyright information in the footer */
+footer div p {
+    text-align: center;
+    font-size: medium;
+}
