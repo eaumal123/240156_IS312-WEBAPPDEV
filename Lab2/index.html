@@ -1,0 +1,43 @@
+<!-- Author: EAU Mallen -->
+<!-- Date: 01/04/26-->
+<!-- Unit: IS312 Web Application Development-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Program</title>
+
+    <script>
+        function validateForm() {
+            let code = document.forms["programForm"]["programCode"].value;
+            let name = document.forms["programForm"]["programName"].value;
+
+            if (code === "" || name === "") {
+                alert("All fields must be filled out!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+<h2>Enter program details...</h2>
+
+<form name="programForm" action="add-new-program.php" method="post" onsubmit="return validateForm()">
+
+    <label>Program Code:</label><br>
+    <input type="text" name="programCode"><br><br>
+
+    <label>Program Name:</label><br>
+    <input type="text" name="programName"><br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
